@@ -645,7 +645,7 @@ font-weight: lighter;
             display: block;
         }
         .wmn p{
-            width: auto;
+            width: 100%;
             align-self: end;
         }
         .s-wmn img{
