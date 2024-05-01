@@ -646,7 +646,7 @@ font-weight: lighter;
         }
         .wmn p{
             width: 100%;
-            align-self: end;
+            flex-wrap: wrap;
         }
         .s-wmn img{
             width: 255px;
