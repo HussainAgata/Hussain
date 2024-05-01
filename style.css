@@ -83,42 +83,42 @@ li a:hover{
     color: black;
 }
 
-.showcase{
-    padding: 40px 0;
+img{
+    width: 100px;
 }
-.showcase img{
-    height: 340px;
-    width: 500px;
-    border-radius: 30px;
-    align-self: center;
+.s-b h2{
+    text-align: left;
+    font-size: 50px;
+    
 }
-
-.showcase img:hover{
-    filter: blur(0.2rem);
-}
-.shw {
+.shw{
     display: flex;
-    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+    padding: 80px 0
 }
-.showcase .s-b{
+
+.s-b p{
+    margin-top: 50px;
+    line-height: 1.5em;
+}
+.s-b button{
+    margin-top: 30px;
+}
+
+.shw img{
+    width: 300px;
+    border-radius: 20px;
+}
+.s-b{
+    width: 69.9%;
+    padding: 30px 50px;
+    color: rgba(3, 3, 68, 0.763);
     background-color: rgba(255, 255, 255, 0.427);
-    width: 570px;
-    height: 450px;
-    border-radius: 30px;
-    padding: 50px;
+    border-radius: 15px;
 }
-
-.showcase .s-b h2{
-    font-size: 70px;
-    color: rgba(3, 3, 68, 0.763);
-}
-.showcase .s-b p{
-    line-height: 2em;
-    padding-top: 30px;
-    font-size: 22px;
-    color: rgba(3, 3, 68, 0.763);
-}
-
 /*services*/
 .services{
     background-image: url(images/bg.jpg);
@@ -134,9 +134,9 @@ li a:hover{
     font-size: 35px;
     font-weight: bolder;
     color: rgba(3, 3, 68, 0.763);
-    
 }
 .icon-container{
+    
     background-color: rgba(255, 255, 255, 0.427);
     width: 100%;
     border-radius: 15px;
@@ -162,17 +162,22 @@ li a:hover{
 }
 
 .container-1{
-    display: grid;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
     padding: 0 80px;
-    grid-template-columns: 1fr 1fr;
+    
 }
 .about img{
-    width: 500px;
-    height: 530px;
+    width: 450px;
     border-radius: 15px;
+    display: flex;
+    margin: auto;
 }
 
 .abt{
+    width: 50%;
     background-color: rgba(255, 255, 255, 0.427);
     border-radius: 20px;
     height: auto;
@@ -186,9 +191,8 @@ li a:hover{
     grid-template-columns: 1fr 1fr;
     gap: 2em;
     line-height: 1.3em;
-    color: rgba(3, 3, 68, 0.763);
-    
-    padding: 40px 0;
+    color: rgba(3, 3, 68, 0.763); 
+    padding: 30px 0;
 }
 .abt h2{
     font-size: 60px;
@@ -263,12 +267,13 @@ li a:hover{
     font-weight: lighter;
     padding: 15px 0;
 }
-
+.wrk-img{
+    display: flex;
+    justify-content: center;
+}
 .wrk-img img{
-    width: 360px;
-    height: 350px; 
-    padding: 0px 1px;
-    border-radius: 30px;
+    width: 300px;
+    border-radius: 20px;
 }
 
 .progression{
@@ -312,11 +317,14 @@ li a:hover{
     padding: 80px 0;
 }
 .wmn{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 80px 0
 }
 .wmn p{
-    
+    width: 40%;
     height: min-content;
     padding: 80px 40px;
     background-color: rgba(255, 255, 255, 0.427);
@@ -464,39 +472,8 @@ font-weight: lighter;
         padding: 4px;
     }
 
-    .showcase .s-b{
-        width: auto;
-        height: auto;
-        flex-wrap: wrap;
-        grid-auto-rows: minmax(100px, auto);
-    }
-    .showcase .shw{
-        display: block;
-    }
-    .showcase .s-b h2{
-        font-size: 30px;
-        color: rgba(3, 3, 68, 0.763);
-    }
-    .showcase .s-b p{
-        line-height: 1.5em;
-        padding-top: 20px;
-        font-size: 16px;
-        color: rgba(3, 3, 68, 0.763);
-    }
-        .showcase img{
-            height: 340px;
-            width: auto;
-            border-radius: 30px;
-            align-self: flex-start;
-            margin-top: 10px;
-        }
-        .s-b button{
-            display: flex;
-            margin: auto;
-            margin-top: 10px;
-        }
-    
-        .icon-container{
+ 
+     .icon-container{
             display: block;
         }
     
@@ -505,20 +482,8 @@ font-weight: lighter;
             padding: 0 80px;
             grid-template-columns: 1fr 1fr;
         }
-        .about img{
-            width: 325px;
-            height: auto;
-        }
         
-        .abt{
-            height: auto;
-            padding: 30px 15px;
-            align-self: center;
-            display: block;
-            grid-auto-rows: minmax(100px, auto);
-    
-        }
-    
+
         
         .abt-p{
             display: block;
@@ -535,20 +500,7 @@ font-weight: lighter;
         .wrk h1, h2{
             text-align: center;
         }
-        .s-wmn{
-            padding: 40px 0;
-        }
-        .wmn{
-            display: block;
-        }
-        .wmn p{
-            align-self: end;
-        }
-        .s-wmn img{
-            width: 330px;
-            height: 350px;
-            border-radius: 20px;
-        }
+        
 
         .wrapper {
             display: block;
@@ -635,11 +587,138 @@ font-weight: lighter;
      .navbar a:hover{
         padding: 4px;
     }
-    .about img{
-        width: 320px;
-        height: 330px;
+    .s-b{
+        width: auto;
+        padding: 30px 50px;
+        color: rgba(3, 3, 68, 0.763);
+        background-color: rgba(255, 255, 255, 0.427);
         border-radius: 15px;
     }
+
+    .s-b button{
+        display: flex;
+        margin: auto;
+        margin-top: 30px;
+    }
+        .icon-container{
+            display: block;
+        }
+    
+        .container-1{
+            display: block;
+            padding: 0 80px;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .about img{
+            width: 250px;
+            border-radius: 15px;
+            display: flex;
+            margin: auto;
+            padding-bottom: 5px;
+        }
+        
+        .abt{
+            
+            width: auto;
+        }
+        .abt-p{
+            
+            display: block;
+            line-height: 1.4em;
+            flex-wrap: wrap;
+        }
+        .abt h2{
+            font-size: 40px;
+            color:  rgba(3, 3, 68, 0.763);
+    
+            text-align: center;
+        }
+    
+        .wrk h1, h2{
+            text-align: center;
+        }
+        .s-wmn{
+            padding: 40px 0;
+        }
+        .wmn{
+            display: block;
+        }
+        .wmn p{
+            align-self: end;
+        }
+        .s-wmn img{
+            width: 255px;
+            height: 350px;
+            border-radius: 20px;
+        }
+
+        .wrapper {
+            display: block;
+            gap: 2em;
+            padding: 50px;
+            margin: 20px;
+            
+        }
+        .wrapper >div{
+            padding: 50px 30px;
+            background-color: rgba(255, 255, 255, 0.427);
+            border-radius: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+        .wrapper h2{
+            text-align: center;
+        }
+
+        .wrk-img{
+            flex-direction: column;
+            justify-content: start;
+            gap: 1em;
+        }
+        
+        .wrk-img img{
+            width: 255px;
+            height: auto; 
+            align-items: center;
+        }
+        .our-pricing{
+            padding: 90px 0;
+        }
+        .cntn h4{
+           text-align: center;
+        }
+        .cntn button{
+            display: grid;
+            place-items: center;
+            margin: auto;
+            margin-top: 20px;
+        }
+        .cntn h2{
+            text-align: center;
+        }
+        .abt-us{
+            display: block;
+          }
+          
+          .abt-us h1,p{
+            text-align: center;
+          }
+          .abt-us li{
+            text-align: center;
+      }
+    
+      .abt-us li a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+      }
+    
+      .cover{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
     .abt-p p{
         display: grid;
         line-height: 1.4em;
@@ -651,4 +730,7 @@ font-weight: lighter;
 
         text-align: center;
     }
-  }
+    
+}
+
+
