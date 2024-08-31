@@ -10,10 +10,6 @@
 body{
     font-family: lato,sans-serif;
 }
-img:hover{
-    filter: blur(0.2rem);
-}
-
 
 .container{
     padding: 0 80px;
@@ -59,7 +55,7 @@ button{
 
 button:hover{
     background: linear-gradient(to right, rgba(111, 5, 160, 0.484),  rgba(253, 100, 45, 0.461));
-    transform: translateY(5px);
+    transform: scale(0.9);
 }
 .h-bg{
     background-color: rgba(26, 147, 199, 0.356);
@@ -110,6 +106,10 @@ img{
 
 .shw img{
     width: 300px;
+    border-radius: 50% 50%;
+    transition: border-radius 2s ease;
+}
+.shw img:hover{
     border-radius: 20px;
 }
 .s-b{
@@ -255,7 +255,7 @@ img{
     height: auto;
 }
 .wrk{
-    padding: 90px 0;
+    padding: 20px 0;
     color: rgba(3, 3, 68, 0.763);
 }
 
@@ -268,12 +268,25 @@ img{
     padding: 15px 0;
 }
 .wrk-img{
+    margin: auto;
+    width: 70%;
+    height: 450px;
     display: flex;
     justify-content: center;
+    gap: 10px;
+    
 }
 .wrk-img img{
-    width: 300px;
-    border-radius: 20px;
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid rgb(248, 89, 89);
+    transition: width 0.7s ease;
+}
+
+.wrk-img :hover{
+    width: 50%;
 }
 
 .progression{
@@ -674,14 +687,14 @@ font-weight: lighter;
 
         .wrk-img{
             flex-direction: column;
-            justify-content: start;
-            gap: 1em;
+            flex-wrap: wrap;
+            gap: 0.3em;
         }
         
         .wrk-img img{
-            width: 255px;
-            height: auto; 
-            align-items: center;
+            width: 50px;
+            height: 200px; 
+            
         }
         .our-pricing{
             padding: 90px 0;
